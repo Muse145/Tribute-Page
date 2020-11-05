@@ -1,13 +1,79 @@
-body {
-  background-color: lightblue;
-}
+*{
+ margin:0;
+ padding:0;
+ }
+            body{
+             font-family:"Arial", "Sherif"; /*Det här bestämmer vilken font texten kommer vara*/
+      
+           }
+       
+       
+           .background-wrap{/*det här är css för bakgrunden*/
+             position:fixed;/* det här fixar så att bakgrunden står stilla när man skrollar och sånt*/
+             z-index:-1000;/*Det här gör så att bakgrunder står bakom content*/
+             width:100%;/*Width på bakrunden kommer vara 100% så den kommer täcka hela widht*/
+             height:100%;/*Bakgrunden kommer vara 100% på height så med hjälp av widht kommer bakgrunden täcka hela skärmen*/
+             overflow:hidden;
+             top:0;
+             left:0;
+           }
+         #video-bg-elem {
+           position:absolute;/*Kommer vara placerad absolut fixad*/
+           top:0;
+           left:0;
+           min-height:100%;/*kommer täcka 100% av skärmen*/
+           min-width:100%;/*kommer täcka 100% av skärmen*/
+         }
+       
+         .content  {
+           position:absolute;/*kommer vara placerad absolut fixad*/
+           width:100%;
+           min-height:122%;
+           z-index:1000%;/*content kommer vara framför bakgrunden*/
+           background-color:rgba(0,0,0,0.8);/*bakgrunden kommer vara mörk*/
+         }
+          .content h1 {
+           text-align:center;/*Headern kommer vara placerad i mitten*/
+           font-size:65px;/*storleken kommer vara 65*/
+           text-transform:uppercase;/*alla bokstäver kommer vara stora*/
+           font-weight:300;
+           color:#fff;/*kommer vara vit färg*/
+           padding-top:15%;/*15% of its parent width*/
+           margin-bottom:10px;/*kommer vara pushad ner*/
+         }
+       
+         .content p {
+           text-align:center;/*paragraphen kommer vara placerad i mitten*/
+           font-size:15px;/*storleken på font kommer vara 15 px*/
+           letter-spacing:3px;/*space mellan texten kommer vara 3px*/
+           color:#fff;/*texten kommer vara vit*/
+            margin-top:50px
+         }
+         .content h2 {
+          text-align:center;
+          font-size:15px;
+          ;
+           font-weight:50;
+           color:#aaa;
+           padding-top:30%;
+           margin-bottom 5px;
+         }
+         
+      
+      
 
-h1 {
-  color: white;
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
+      
+      
+      .images img{
+        top:25%;
+        left:25%;
+        margin-top:800px;
+        height:200px;
+        border-color:#aaa;/*bordern runt bilden kommer vara grå*/
+         text-align:center;/*det gjorde så att jag kunde placera bilderna där jag ville*/
+        
+      }
+      
+       
+ 
+        
